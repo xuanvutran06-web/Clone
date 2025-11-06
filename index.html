@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sữa Mlekovita</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Vu</div>
+    <h1>NEW PRODUCTS - Mlekovita</h1>
+  </header>
+
+  <main>
+    <!-- Slide 1 -->
+    <section class="slide">
+      <h2>Sữa Mlekovita</h2>
+      <table>
+        <tr><td>Brand</td><td>Mlekovita</td></tr>
+        <tr><td>Quy cách</td><td>12 Hộp/Thùng - 1L</td></tr>
+        <tr><td>Hình Ảnh</td><td>(chèn ảnh nếu có)</td></tr>
+        <tr>
+          <td>End user price</td>
+          <td>
+            <label>
+              <input type="checkbox" onclick="togglePrice(this,'price1')"> Hiện giá
+            </label>
+            <span id="price1" class="hidden">330.000</span>
+          </td>
+        </tr>
+        <tr>
+          <td>Giá nhập</td>
+          <td>
+            <label>
+              <input type="checkbox" onclick="togglePrice(this,'price2')"> Hiện giá
+            </label>
+            <span id="price2" class="hidden">287.000</span>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Slide 2 -->
+    <section class="slide">
+      <h2>So sánh Mlekovita vs Vinamilk</h2>
+      <table>
+        <tr><td>Brand</td><td>Mlekovita</td><td>Vinamilk</td></tr>
+        <tr><td>Specification</td><td>12</td><td>12</td></tr>
+        <tr><td>Attribute</td><td>Thùng</td><td>Thùng</td></tr>
+        <tr>
+          <td>End user price</td>
+          <td>
+            <label><input type="checkbox" onclick="togglePrice(this,'price3')"> Hiện giá</label>
+            <span id="price3" class="hidden">330.000</span>
+          </td>
+          <td>
+            <label><input type="checkbox" onclick="togglePrice(this,'price4')"> Hiện giá</label>
+            <span id="price4" class="hidden">356.000</span>
+          </td>
+        </tr>
+        <tr>
+          <td>Sell-in (VAT)</td>
+          <td>
+            <label><input type="checkbox" onclick="togglePrice(this,'price5')"> Hiện giá</label>
+            <span id="price5" class="hidden">287.000</span>
+          </td>
+          <td>
+            <label><input type="checkbox" onclick="togglePrice(this,'price6')"> Hiện giá</label>
+            <span id="price6" class="hidden">350.000</span>
+          </td>
+        </tr>
+        <tr><td>GP</td><td>43.000</td><td>8.000</td></tr>
+        <tr><td>Margin Rate (%)</td><td>13%</td><td>2.5%</td></tr>
+      </table>
+    </section>
+
+    <!-- Slide 3 -->
+    <section class="slide">
+      <h2>Thông tin nhà cung cấp</h2>
+      <table>
+        <tr><td></td><td>Mlekovita</td><td>Vinamilk</td></tr>
+        <tr><td>Supplier classification</td><td>Distributor</td><td>Distributor</td></tr>
+        <tr><td>MOQ</td><td>2 mil/WH</td><td>20 ctn</td></tr>
+        <tr><td>Leadtime delivery</td><td>2</td><td>2</td></tr>
+        <tr><td>Area</td><td>ALL</td><td>ALL</td></tr>
+        <tr><td>Payment method</td><td>COD</td><td>COD</td></tr>
+        <tr><td>Return</td><td>No</td><td>No</td></tr>
+        <tr><td>Promotion</td><td>No</td><td>No</td></tr>
+        <tr><td>POSM</td><td>No</td><td>No</td></tr>
+      </table>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
