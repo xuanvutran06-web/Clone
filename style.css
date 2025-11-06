@@ -8,7 +8,7 @@ body {
   background: #007acc;
   color: #fff;
   padding: 16px;
-  text-align: center;
+  text-align: center; /* căn giữa tiêu đề */
 }
 
 .logo {
@@ -26,6 +26,12 @@ main { padding: 20px; }
   margin-bottom: 24px;
 }
 
+.slide h2 {
+  text-align: center; /* căn giữa tiêu đề slide */
+  margin-bottom: 15px;
+  color: #007acc;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -38,21 +44,25 @@ td {
   vertical-align: top;
 }
 
-.price-toggle {
-  user-select: none;
+/* xen kẽ màu dòng */
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+/* in đậm cột tiêu chí */
+.label {
+  font-weight: bold;
+  background-color: #eef6fb;
+}
+
+label {
   cursor: pointer;
-  margin-right: 8px;
 }
 
 .price {
   font-weight: 600;
   color: #222;
 }
-
-/* Giá bị che mặc định */
-.masked::before {
-  content: "••••••";
-  color: #888;
-}
-
-/* Khi hiện giá sẽ thay nội dung bằng text thật (JS sẽ set innerText) */
