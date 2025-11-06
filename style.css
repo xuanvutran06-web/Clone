@@ -2,31 +2,28 @@ body {
   font-family: Arial, sans-serif;
   background: #f4f4f4;
   margin: 0;
-  padding: 0;
 }
 
-header {
+.header {
   background: #007acc;
-  color: white;
-  padding: 15px;
+  color: #fff;
+  padding: 16px;
   text-align: center;
 }
 
 .logo {
-  font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
+  font-size: 22px;
 }
 
-main {
-  padding: 20px;
-}
+main { padding: 20px; }
 
 .slide {
-  background: white;
-  margin-bottom: 30px;
+  background: #fff;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 24px;
 }
 
 table {
@@ -38,12 +35,24 @@ table {
 td {
   border: 1px solid #ddd;
   padding: 8px;
+  vertical-align: top;
 }
 
-.hidden {
-  display: none;
-}
-
-label {
+.price-toggle {
+  user-select: none;
   cursor: pointer;
+  margin-right: 8px;
 }
+
+.price {
+  font-weight: 600;
+  color: #222;
+}
+
+/* Giá bị che mặc định */
+.masked::before {
+  content: "••••••";
+  color: #888;
+}
+
+/* Khi hiện giá sẽ thay nội dung bằng text thật (JS sẽ set innerText) */
