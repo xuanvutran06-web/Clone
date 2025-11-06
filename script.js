@@ -1,6 +1,7 @@
 // Khởi tạo: tất cả giá ban đầu rỗng
 document.querySelectorAll('.price').forEach(el => {
   el.textContent = '';
+  el.classList.remove('show');
 });
 
 document.querySelectorAll('input[type="checkbox"][data-target]').forEach(cb => {
@@ -10,9 +11,11 @@ document.querySelectorAll('input[type="checkbox"][data-target]').forEach(cb => {
     const value = el.getAttribute('data-price');
 
     if (this.checked) {
-      el.textContent = value;   // chỉ khi tick mới hiện giá
+      el.textContent = value;
+      el.classList.add('show');   // thêm class để fade-in
     } else {
-      el.textContent = '';      // bỏ giá khi bỏ tick
+      el.textContent = '';
+      el.classList.remove('show');
     }
   });
 });
